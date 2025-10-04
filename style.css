@@ -1,0 +1,261 @@
+/* General Body and Main Layout */
+body {
+    background-color: #0A192F;
+    color: #E6F1FF;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #112240;
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #64FFDA;
+}
+
+.anav {
+    display: flex;
+    flex-grow: 1; /* Allows nav links to take up available space */
+    justify-content: flex-end; /* Pushes links to the right */
+    align-items: center;
+}
+
+.linkh {
+    margin-left: 1.5rem;
+    color: #E6F1FF;
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+
+.linkh:hover {
+    color: #64FFDA;
+}
+
+.searchh {
+    display: flex;
+    margin-left: 1.5rem;
+}
+
+.inputt {
+    border: none;
+    padding: 0.5rem;
+    border-radius: 5px;
+    background-color: #A8B2D1;
+    color: #0A192F;
+    font-size: 0.9rem;
+    outline: none;
+}
+
+.btn {
+    background-color: #64FFDA;
+    color: #0A192F;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    margin-left: 0.5rem;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #52e8c2;
+}
+
+/* Hero Section (Info) */
+.info {
+    display: flex;
+    flex-direction: column; /* Stacks items vertically on mobile first */
+    align-items: center;
+    text-align: center;
+    padding: 2rem 1rem;
+    max-width: 900px;
+    margin: 4rem auto;
+}
+
+.text2 h3 {
+    color: #64FFDA;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.text2 h1 {
+    font-size: 3rem;
+    margin: 0.5rem 0;
+    color: #E6F1FF;
+}
+
+.text2 h2 {
+    color: #A8B2D1;
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+.image img {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    margin-top: 2rem;
+    border: 3px solid #64FFDA;
+    object-fit: cover; /* Ensures image fills container without distortion */
+}
+
+/* Personal Information Section */
+.personal {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+.o {
+    margin-bottom: 2rem;
+    background-color: #112240;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.o h2 {
+    
+    color: #64FFDA;
+    border-bottom: 2px solid #A8B2D1;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.o h2::before {
+    
+    color: #64FFDA;
+    margin-right: 0.8rem;
+    font-size: 1.2rem;
+}
+
+.o h4, .o p, .o ul {
+    color: #A8B2D1;
+    line-height: 1.6;
+}
+
+.o ul {
+
+    list-style: none;
+    padding: 0;
+}
+
+.o li {
+    
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.o li::before {
+    
+    position: absolute;
+    left: 0;
+    color: #64FFDA;
+}
+
+/* Horizontal lines */
+.line {
+   
+    border-top: 1px solid #A8B2D1;
+    opacity: 0.2;
+    margin: 2rem auto;
+    width: 90%;
+}
+
+/* Footer */
+footer {
+    background-color: #112240;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+    color: #A8B2D1;
+}
+
+/* Media Queries for Responsiveness */
+@media (min-width: 768px) {
+    .info {
+        flex-direction: row; /* Aligns items side-by-side on larger screens */
+        justify-content: space-between;
+        text-align: left;
+    }
+    
+    .text2 {
+        flex: 1;
+        margin-right: 2rem;
+    }
+
+    .image img {
+        margin-top: 0;
+        height: 400px;
+        width: 400px;
+    }
+
+    .personal {
+        padding: 2rem 0; /* Adjust padding for better spacing */
+    }
+
+    .o {
+        margin-left: 0; /* Resets margin from original CSS */
+    }
+}
+
+/* Animation CSS */
+.o.hidden {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.o.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#contact{
+    color: #64FFDA;
+   
+}
+
+.social_media{
+    opacity: 5.0;
+    color: white;
+    left: 15%;
+    
+    
+}
+
+.social_media i{
+    color: white;
+    opacity:0.6;
+    padding: 0 5px;
+    top: 50px;
+
+
+}
+
+.social_media i:hover{
+    opacity: 5;
+    transform: scale(1.5);
+
+}
+
+
+
