@@ -1,7 +1,7 @@
 //github add files
 
 git clone "https://github.com/Rutuja621/PortFolio.git"
-git init
+git init //used to create new git repo
 git add .
 git commit -m "My Portfolio"
 
