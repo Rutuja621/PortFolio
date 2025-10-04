@@ -10,3 +10,4 @@ git status
 git branch -M main
 git remote add origin https://github.com/Rutuja621/PortFolio.git
 git push -u origin main
+ mkdir project2 //to add new file
